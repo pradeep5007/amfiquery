@@ -98,7 +98,7 @@ class UpdateNAV(webapp.RequestHandler):
     """
     def get(self):
 
-        url = 'http://www.amfiindia.com/spages/NAV0.txt'
+        url = 'http://www.portal.amfiindia.com/spages/NAV0.txt'
         result = urlfetch.fetch(url, deadline=120)
 
         if result.status_code != 200:
